@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* background-color: purple; */
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: auto;
+  width: 80%;
+}
+.navigation__bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+.nav__bar a:nth-child(3) {
+  font-weight: 700;
+  /* color: black; */
+}
+.nav__bar {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.nav__bar a {
+  text-decoration: none;
+}
+
+.btn__start {
+  background-color: rgb(3, 3, 76);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  /* width: 25%; */
+}
+
+/* ====================Flexible Plans for Everyone.Flexible Plans for Everyone.============================= */
+
+.flexible__plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flexible__plans h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+.flexible__plans p {
+  color: grey;
+  text-align: center;
+  padding-bottom: 1rem;
+  width: 65%;
+}
+
+.flexible__plans .monthly__bill {
+  display: flex;
+  justify-content: center;
+}
+.monthly__bill p:nth-child(1) {
+  font-weight: 700;
+}
+.flexible__plans .monthly__bill label {
+  margin-left: 1rem;
+}
+/* ====================Perfect Plans================================== */
+
+.price__plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 0rem;
+}
+.price__plans article:nth-child(1) {
+  height: 70vh;
+  display: grid;
+}
+.price__plans article:nth-child(2) {
+  height: 80vh;
+  display: grid;
+}
+.price__plans article:nth-child(3) {
+  height: 60vh;
+  display: grid;
+}
+.perfect__plan {
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 10px 10px 17px -9px rgba(0, 0, 0, 0.75);
+}
+.perfect__plan h2 {
+  font-size: 2.5rem;
+}
+.perfect__plan ul li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0.5rem 0rem;
+  color: grey;
+}
+.perfect__plan span {
+  font-size: 1rem;
+  color: grey;
+  margin-left: -0.6rem;
+}
+.perfect__plan p {
+  padding: 1rem 0rem;
+  color: grey;
+  border-bottom: 1px solid grey;
+}
+.perfect__plan .btn__start {
+  margin: 1rem 0rem;
+}
+/* ====================Footer================================== */
+footer {
+  padding: 2rem 0rem;
+}
+.product__title,
+.help__title,
+.company__title {
+  list-style: none;
+}
+a {
+  color: gray;
+  font-size: 0.75rem;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+}
+.footer__information {
+  display: flex;
+  gap: 4rem;
+}
+.bold__title {
+  color: black;
+  font-weight: 700;
+}
+form {
+  display: flex;
+  border: 1px solid grey;
+  outline: 1px solid grey;
+  padding: 2px;
+  border-radius: 6px;
+}
+input[type="email"] {
+  width: 100%;
+  border: none;
+}
+::placeholder {
+  padding-left: 1rem;
+}
+.try__tweets_now > p {
+  margin-right: 4rem;
+  padding-bottom: 0.5rem;
+}
+.try__tweets_now .btn__start {
+  background-color: rgb(3, 3, 76);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: none;
+  width: 50%;
+}
+.perfect__plan .btn__start:hover,
+form .btn__start:hover,
+.navigation__bar .btn__start:hover {
+  cursor: pointer;
+  transition: 0.6s;
+  background-color: rgb(47, 37, 242);
+}
+
+/* ====================Dark Mode================================== */
+.toggle {
+  width: 60px;
+  height: 25px;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #2f92f4;
+  border-radius: 2rem;
+  user-select: none;
+  cursor: pointer;
+  transition: translate 0.3s, background-color 0.8s;
+  &::before {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    content: "";
+    height: calc(100% - 2px);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transition: translate 0.3s, background-color 0.8s;
+    background: #fff;
+  }
+
+  & input {
+    position: absolute;
+    appearance: none;
+  }
+  & span {
+    position: relative;
+    transition: translate 0.6s ease 0.2s;
+
+    &:nth-of-type(1) {
+      translate: 0 150%;
+    }
+
+    &:nth-of-type(2) {
+      translate: 0 0%;
+    }
+  }
+  &:has(input:checked) {
+    background-color: #2f92f4;
+
+    & span:nth-of-type(1) {
+      translate: 0 0%;
+    }
+
+    & span:nth-of-type(2) {
+      translate: 0 -150%;
+    }
+  }
+
+  &:has(input:checked)::before {
+    translate: 100% 0;
+    background-color: #444444;
+  }
+}
+/* Use like: */
+
+[data-mode="dark"] {
+  & body {
+    background: #1b1b1b;
+    color: #eee;
+  }
+}

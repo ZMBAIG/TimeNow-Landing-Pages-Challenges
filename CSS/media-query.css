@@ -1,0 +1,80 @@
+@media only screen and (max-width: 768px) {
+  .audience__post header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__bar {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .wrapper {
+    display: grid;
+    width: 90%;
+    margin: auto;
+  }
+  .wrapper h1 {
+    font-size: 2.5rem;
+  }
+  .audience__post {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
+  }
+  .sub__audience__post {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .start__scheduling .btn__start,
+  .mockup__image .btn__start,
+  .unified__dashboard .btn__start {
+    width: 60%;
+  }
+  .check__time__now {
+    display: flex;
+    flex-direction: column;
+  }
+  .checkmark {
+    width: 5%;
+  }
+  .time__now__users h2 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .influential__people,
+  .customized__dashboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-right: 0%;
+  }
+  .time__now__users,
+  .influential__people__para,
+  .unified__dashboard,
+  .real__time__data {
+    padding: 2rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+  }
+  .logo {
+    width: 8%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .sub__footer__information {
+    display: flex;
+    flex-direction: column;
+  }
+  .try__tweets_now {
+    margin-top: 2rem;
+  }
+  form {
+    max-width: 100%;
+  }
+}
