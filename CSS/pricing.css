@@ -8,7 +8,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: purple;
 }
 .wrapper {
   display: flex;
@@ -23,16 +22,11 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0rem;
-  border: 1px solid rgb(51, 255, 0);
 }
-/* .nav__logo {
-  display: none;
-} */
 .nav__bar {
   display: flex;
   align-items: center;
   gap: 2rem;
-  border: 1px solid red;
 }
 .nav__bar a {
   text-decoration: none;
@@ -48,10 +42,9 @@ body {
   padding: 1rem 1.5rem;
   border-radius: 6px;
   border: none;
-  /* width: 25%; */
 }
 
-/* ====================Flexible Plans for Everyone.Flexible Plans for Everyone.============================= */
+/* ===========Flexible Plans for Everyone.Flexible Plans for Everyone.============= */
 
 .flexible__plans {
   display: flex;
@@ -207,7 +200,6 @@ form .btn__start:hover,
   padding: 0.5rem;
   background-color: #2f92f4;
   border-radius: 2rem;
-  /* user-select: none; */
   cursor: pointer;
   transition: translate 0.3s, background-color 0.8s;
   &::before {
